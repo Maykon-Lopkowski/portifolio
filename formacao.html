@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Metadados essenciais -->
+  <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Torna o layout responsivo -->
+  <title>Formação</title> <!-- Título da página -->
+
+  <!-- Link para o arquivo CSS externo -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Estilos adicionais -->
+  <style>
+    /* Estilo geral do corpo */
+    body {
+      font-family: Arial, sans-serif; /* Define a fonte padrão */
+      margin: 0; /* Remove margens padrão */
+      padding: 0; /* Remove preenchimentos padrão */
+      background-color: #f5f5f5; /* Define a cor de fundo */
+      color: #333; /* Define a cor do texto */
+    }
+
+    /* Estilo do cabeçalho */
+    header {
+      background-color: #0078d4; /* Fundo azul */
+      padding: 10px 0; /* Espaçamento interno */
+      text-align: center; /* Centraliza o conteúdo */
+    }
+
+    /* Menu de navegação */
+    nav ul {
+      list-style: none; /* Remove marcadores da lista */
+      padding: 0; /* Remove preenchimentos */
+      margin: 0; /* Remove margens */
+      display: flex; /* Exibe os itens horizontalmente */
+      justify-content: center; /* Centraliza os itens */
+    }
+
+    /* Itens do menu */
+    nav ul li {
+      margin: 0 15px; /* Define espaçamento entre os itens */
+    }
+
+    /* Links do menu */
+    nav ul li a {
+      color: white; /* Cor do texto */
+      text-decoration: none; /* Remove o sublinhado */
+      font-weight: bold; /* Negrito */
+    }
+
+    /* Indicação do link ativo */
+    nav ul li a.active {
+      text-decoration: none; /* Remove o sublinhado (já estilizado) */
+    }
+
+    /* Estilo do conteúdo principal */
+    main {
+      max-width: 800px; /* Largura máxima */
+      margin: 40px auto; /* Centraliza horizontalmente */
+      padding: 20px; /* Espaçamento interno */
+      background-color: #fff; /* Fundo branco */
+      border-radius: 8px; /* Cantos arredondados */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra suave */
+      text-align: justify; /* Texto justificado */
+    }
+
+    /* Estilo do título */
+    h1 {
+      text-align: center; /* Centraliza o texto */
+      color: #333; /* Cor do texto */
+      margin-bottom: 20px; /* Espaçamento abaixo */
+    }
+
+    /* Estilo das listas */
+    ul {
+      list-style: none; /* Remove os marcadores */
+      padding-left: 0; /* Remove o recuo padrão */
+    }
+
+    /* Itens das listas */
+    ul li {
+      margin-bottom: 15px; /* Espaço entre os itens */
+      position: relative; /* Necessário para posicionar o ícone */
+      padding-left: 20px; /* Espaço para o ícone de check */
+    }
+
+    /* Ícones de check */
+    ul li::before {
+      content: "✓"; /* Adiciona um check antes de cada item */
+      position: absolute; /* Posiciona em relação ao item */
+      left: 0; /* Posiciona à esquerda */
+      color: #0078d4; /* Cor azul */
+      font-weight: bold; /* Negrito */
+    }
+
+    /* Espaçamento entre categorias principais */
+    ul.categoria {
+      margin-top: 30px;
+    }
+
+    /* Estilo dos parágrafos */
+    p {
+      margin: 10px 0; /* Espaçamento acima e abaixo */
+    }
+
+    /* Estilo dos botões */
+    button {
+      margin-top: 3px; /* Pequeno espaçamento superior */
+      cursor: pointer; /* Mostra o cursor de mão */
+      background-color: #0078d4; /* Fundo azul */
+      color: white; /* Texto branco */
+      border: none; /* Remove a borda padrão */
+      border-radius: 4px; /* Bordas arredondadas */
+      padding: 5px 10px; /* Espaçamento interno */
+    }
+
+    /* Efeito ao passar o mouse no botão */
+    button:hover {
+      background-color: #005bb5; /* Azul mais escuro */
+    }
+  </style>
+</head>
+<body>
+  <!-- Cabeçalho com menu de navegação -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li> <!-- Link para a página inicial -->
+        <li><a href="sobre.html">Sobre Mim</a></li> <!-- Link para a página Sobre Mim -->
+        <li><a href="formacao.html" class="active">Formação</a></li> <!-- Página atual -->
+        <li><a href="portfolio.html">Portfólio</a></li> <!-- Link para a página Portfólio -->
+        <li><a href="contato.html">Contato</a></li> <!-- Link para a página Contato -->
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main>
+    <h1>Formação Acadêmica</h1> <!-- Título principal -->
+
+    <!-- Lista de categorias de formação -->
+    <ul>
+      <!-- Categoria: Graduação -->
+      <li class="categoria">
+        <strong>Graduação:</strong>
+        <button onclick="toggleDetails('graduacao')">Detalhes</button> <!-- Botão para exibir/esconder detalhes -->
+        <ul id="graduacao" style="display: none;"> <!-- Lista de graduações inicialmente escondida -->
+          <li>Tecnologia em Ciência de Dados. Centro Universitário UNINTER – (Cursando 2024 - 2026)</li>
+          <li>Formação Pedagógica em Matemática. Faculdade UNIBF - 2024</li>
+          <li>Formação Pedagógica em Geografia. Faculdade UNIBF - 2023</li>
+          <li>Administração de Empresas. Centro Universitário UNINTER - 2014</li>
+        </ul>
+      </li>
+
+      <!-- Categoria: Especialização -->
+      <li class="categoria">
+        <strong>Especialização:</strong>
+        <button onclick="toggleDetails('especializacao')">Detalhes</button> <!-- Botão para exibir/esconder detalhes -->
+        <ul id="especializacao" style="display: none;"> <!-- Lista de especializações inicialmente escondida -->
+          <li>Pós-Graduação: Gestão Escolar. Faculdade São Braz - 2016</li>
+          <li>Certificação: ANBIMA CPA 10</li>
+          <li>Certificação: PLDFT para Correspondente Bancário</li>
+          <li>Certificação: FBB 100 Correspondente Completo + LGPD</li>
+        </ul>
+      </li>
+
+      <!-- Categoria: Idiomas -->
+      <li class="categoria">
+        <strong>Idiomas:</strong>
+        <button onclick="toggleDetails('idiomas')">Detalhes</button> <!-- Botão para exibir/esconder detalhes -->
+        <ul id="idiomas" style="display: none;"> <!-- Lista de idiomas inicialmente escondida -->
+          <li>Português: Nativo</li>
+          <li>Inglês: Básico</li>
+        </ul>
+      </li>
+    </ul>
+  </main>
+
+  <!-- Rodapé com informações do autor -->
+  <footer>
+    <p>© 2024 Maykon Lopkowski</p> <!-- Informação de direitos autorais -->
+  </footer>
+
+  <!-- Script para exibir/esconder detalhes -->
+  <script>
+    function toggleDetails(id) {
+      const element = document.getElementById(id); // Obtém o elemento pelo ID
+      if (element.style.display === "none") { // Verifica se está escondido
+        element.style.display = "block"; // Mostra o elemento
+      } else {
+        element.style.display = "none"; // Esconde o elemento
+      }
+    }
+  </script>
+</body>
+</html>

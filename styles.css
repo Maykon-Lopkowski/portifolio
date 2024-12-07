@@ -1,0 +1,91 @@
+/* Estilo geral do corpo da página */
+body {
+  font-family: Arial, sans-serif; /* Define a fonte padrão para o texto */
+  margin: 0; /* Remove as margens padrão do navegador */
+  padding: 0; /* Remove os preenchimentos padrão do navegador */
+  background-color: #f5f5f5; /* Define um fundo claro */
+  color: #333; /* Cor do texto principal */
+}
+
+/* Estilo do cabeçalho */
+header {
+  background-color: #0078d4; /* Fundo azul */
+  padding: 10px 0; /* Espaçamento interno acima e abaixo */
+}
+
+/* Estilo do menu de navegação */
+nav ul {
+  list-style: none; /* Remove os marcadores da lista */
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove preenchimentos padrão */
+  display: flex; /* Exibe os itens em linha */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+/* Estilo dos itens do menu */
+nav ul li {
+  margin: 0 15px; /* Adiciona espaço entre os itens */
+}
+
+/* Estilo dos links do menu */
+nav ul li a {
+  color: white; /* Cor do texto */
+  text-decoration: none; /* Remove o sublinhado */
+  font-weight: bold; /* Deixa o texto em negrito */
+}
+
+/* Estilo da área principal */
+main {
+  padding: 20px; /* Espaçamento interno */
+  text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo do rodapé */
+footer {
+  background-color: #0078d4; /* Cor do fundo */
+  color: white; /* Cor do texto */
+  text-align: center; /* Centraliza o texto no rodapé */
+  padding: 10px 0; /* Espaçamento interno */
+  margin-top: 20px; /* Espaçamento acima do rodapé */
+  position: fixed; /* Fixa o rodapé no final da página */
+  bottom: 0; /* Garante que o rodapé fique na parte inferior */
+  width: 100%; /* Garante que ocupe toda a largura */
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve para destaque */
+  font-size: 14px; /* Define o tamanho do texto */
+}
+
+/* Menu básico */
+nav ul {
+  list-style: none; /* Remove os marcadores da lista */
+  margin: 0; /* Remove margens padrão */
+  padding: 0; /* Remove preenchimentos padrão */
+  display: flex; /* Exibe os itens em linha */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+/* Estilo dos itens do menu */
+nav ul li {
+  margin: 0 15px; /* Adiciona espaço entre os itens */
+}
+
+/* Estilo dos links do menu */
+nav ul li a {
+  color: white; /* Cor do texto */
+  text-decoration: none; /* Remove o sublinhado */
+  font-weight: bold; /* Deixa o texto em negrito */
+  padding: 10px 15px; /* Espaçamento interno do link */
+  border-radius: 5px; /* Adiciona cantos arredondados */
+  transition: background-color 0.3s, transform 0.2s; /* Adiciona transição suave ao passar o mouse */
+}
+
+/* Efeito ao passar o mouse nos links */
+nav ul li a:hover {
+  background-color: #005bb5; /* Altera a cor do fundo para azul escuro */
+  transform: scale(1.1); /* Aumenta levemente o tamanho do link */
+}
+
+/* Estilo do link ativo no menu */
+nav ul li a.active {
+  background-color: #ffd700; /* Fundo dourado para destacar o link ativo */
+  color: #333; /* Altera a cor do texto para cinza */
+}

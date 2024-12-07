@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Metadados essenciais -->
+  <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta a visualização para dispositivos móveis -->
+  <title>Portfólio</title> <!-- Título da página -->
+
+  <!-- Link para arquivo CSS externo -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Estilos adicionais -->
+  <style>
+    /* Estilo geral do corpo */
+    body {
+      font-family: Arial, sans-serif; /* Define a fonte padrão */
+      margin: 0; /* Remove margens padrão */
+      padding: 0; /* Remove preenchimentos padrão */
+      background-color: #f5f5f5; /* Define a cor de fundo */
+      color: #333; /* Define a cor do texto */
+    }
+
+    /* Estilo do cabeçalho */
+    header {
+      background-color: #0078d4; /* Fundo azul */
+      padding: 10px 0; /* Espaçamento interno */
+      text-align: center; /* Centraliza o conteúdo */
+    }
+
+    /* Estilo do menu de navegação */
+    nav ul {
+      list-style: none; /* Remove os marcadores da lista */
+      padding: 0; /* Remove preenchimentos */
+      margin: 0; /* Remove margens */
+      display: flex; /* Exibe os itens em linha */
+      justify-content: center; /* Centraliza os itens */
+    }
+
+    /* Itens do menu */
+    nav ul li {
+      margin: 0 15px; /* Espaçamento entre os itens */
+    }
+
+    /* Links do menu */
+    nav ul li a {
+      color: white; /* Cor do texto */
+      text-decoration: none; /* Remove o sublinhado */
+      font-weight: bold; /* Deixa o texto em negrito */
+    }
+
+    /* Link ativo */
+    nav ul li a.active {
+      text-decoration: none; /* Remove o sublinhado */
+    }
+
+    /* Estilo da área principal */
+    main {
+      max-width: 800px; /* Largura máxima do conteúdo */
+      margin: 40px auto; /* Centraliza horizontalmente */
+      padding: 20px; /* Espaçamento interno */
+      background-color: #fff; /* Fundo branco */
+      border-radius: 8px; /* Cantos arredondados */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    }
+
+    /* Estilo do título */
+    h1 {
+      color: #333; /* Cor do texto */
+      text-align: center; /* Centraliza o texto */
+      margin-bottom: 30px; /* Espaçamento inferior */
+    }
+
+    /* Estilo da lista do portfólio */
+    .portfolio-list {
+      list-style: none; /* Remove marcadores da lista */
+      padding: 0; /* Remove preenchimentos */
+      margin: 0; /* Remove margens */
+    }
+
+    /* Itens da lista */
+    .portfolio-list li {
+      margin-bottom: 20px; /* Espaço entre os itens */
+      background-color: #f9f9f9; /* Fundo claro */
+      padding: 15px; /* Espaçamento interno */
+      border-radius: 8px; /* Cantos arredondados */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+      text-align: left; /* Alinha o texto à esquerda */
+      display: flex; /* Exibe o texto e o botão em linha */
+      align-items: center; /* Alinha verticalmente */
+      gap: 10px; /* Espaço entre o texto e o botão */
+      font-size: 16px; /* Define o tamanho do texto */
+    }
+
+    /* Estilo dos links dentro da lista */
+    .portfolio-list li a {
+      text-decoration: none; /* Remove o sublinhado */
+      color: white; /* Cor do texto */
+      font-weight: bold; /* Deixa o texto em negrito */
+      font-size: 16px; /* Define o tamanho do texto */
+      padding: 10px 15px; /* Espaçamento interno */
+      background-color: #0078d4; /* Fundo azul */
+      border-radius: 5px; /* Cantos arredondados */
+      display: inline-block; /* Exibe como botão */
+      text-align: center; /* Centraliza o texto no botão */
+      transition: background-color 0.3s; /* Animação ao passar o mouse */
+    }
+
+    /* Efeito ao passar o mouse no botão */
+    .portfolio-list li a:hover {
+      background-color: #005fa3; /* Escurece o azul */
+    }
+
+    /* Estilo do rodapé */
+    footer {
+      text-align: center; /* Centraliza o texto */
+      padding: 10px; /* Espaçamento interno */
+      background-color: #0078d4; /* Fundo azul */
+      color: white; /* Texto branco */
+      margin-top: 20px; /* Espaçamento superior */
+    }
+  </style>
+</head>
+<body>
+  <!-- Cabeçalho com menu de navegação -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li> <!-- Link para a página inicial -->
+        <li><a href="sobre.html">Sobre Mim</a></li> <!-- Link para a página Sobre Mim -->
+        <li><a href="formacao.html">Formação</a></li> <!-- Link para a página Formação -->
+        <li><a href="portfolio.html" class="active">Portfólio</a></li> <!-- Página atual -->
+        <li><a href="contato.html">Contato</a></li> <!-- Link para a página Contato -->
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main>
+    <h1>Portfólio</h1> <!-- Título principal -->
+
+    <!-- Lista de projetos do portfólio -->
+    <ul class="portfolio-list">
+      <!-- Primeiro projeto -->
+      <li>
+        <p><strong>1. Projeto:</strong></p>
+        <a href="https://maykon-lopkowski.github.io/jogo-da-velha1/" target="_blank">
+          Jogo da Velha <!-- Botão com link para o projeto -->
+        </a>
+      </li>
+
+      <!-- Segundo projeto -->
+      <li>
+        <p><strong>2. Projeto:</strong></p>
+        <span>Em desenvolvimento...</span> <!-- Indica que está em progresso -->
+      </li>
+
+      <!-- Terceiro projeto -->
+      <li>
+        <p><strong>3. Projeto:</strong></p>
+        <span>Em desenvolvimento...</span> <!-- Indica que está em progresso -->
+      </li>
+    </ul>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>© 2024 Maykon Lopkowski</p> <!-- Direitos autorais -->
+  </footer>
+</body>
+</html>

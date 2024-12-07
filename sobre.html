@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Metadados essenciais -->
+  <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Torna o layout responsivo -->
+  <title>Sobre Mim</title> <!-- Título da página -->
+
+  <!-- Link para arquivo CSS externo -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Estilos adicionais -->
+  <style>
+    /* Estilo geral do corpo da página */
+    body {
+      font-family: Arial, sans-serif; /* Define a fonte padrão */
+      margin: 0; /* Remove margens padrão */
+      padding: 0; /* Remove preenchimentos padrão */
+      background-color: #f5f5f5; /* Define uma cor de fundo clara */
+      color: #333; /* Define a cor do texto */
+    }
+
+    /* Estilo do cabeçalho */
+    header {
+      background-color: #0078d4; /* Fundo azul */
+      padding: 10px 0; /* Espaçamento interno */
+      text-align: center; /* Centraliza o conteúdo */
+    }
+
+    /* Menu de navegação */
+    nav ul {
+      list-style: none; /* Remove os marcadores da lista */
+      padding: 0; /* Remove preenchimentos */
+      margin: 0; /* Remove margens */
+      display: flex; /* Exibe os itens em linha */
+      justify-content: center; /* Centraliza os itens */
+    }
+
+    /* Itens do menu */
+    nav ul li {
+      margin: 0 15px; /* Espaçamento entre os itens */
+    }
+
+    /* Links do menu */
+    nav ul li a {
+      color: white; /* Define a cor do texto */
+      text-decoration: none; /* Remove o sublinhado */
+      font-weight: bold; /* Negrito */
+    }
+
+    /* Indica o link ativo */
+    nav ul li a.active {
+      text-decoration: none; /* Remove o sublinhado */
+    }
+
+    /* Estilo da área principal */
+    main {
+      max-width: 800px; /* Largura máxima do conteúdo */
+      margin: 20px auto; /* Centraliza horizontalmente */
+      padding: 20px; /* Espaçamento interno */
+      background-color: #fff; /* Fundo branco */
+      border-radius: 8px; /* Cantos arredondados */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+      text-align: justify; /* Texto justificado */
+      line-height: 1.8; /* Espaçamento entre as linhas */
+    }
+
+    /* Estilo do título principal */
+    h1 {
+      text-align: center; /* Centraliza o texto */
+      color: #333; /* Define a cor do texto */
+      margin: 10px 0; /* Espaçamento superior e inferior */
+      font-size: 28px; /* Define o tamanho da fonte */
+    }
+
+    /* Estilo dos parágrafos */
+    p {
+      margin: 15px 0; /* Espaçamento acima e abaixo */
+    }
+
+    /* Estilo do rodapé */
+    footer {
+      background-color: #0078d4; /* Fundo azul */
+      color: white; /* Texto branco */
+      text-align: center; /* Centraliza o texto */
+      padding: 10px 0; /* Espaçamento interno */
+      width: 100%; /* Ocupa toda a largura */
+      box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Sombra no topo do rodapé */
+    }
+  </style>
+</head>
+<body>
+  <!-- Cabeçalho com menu de navegação -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li> <!-- Link para a página inicial -->
+        <li><a href="sobre.html" class="active">Sobre Mim</a></li> <!-- Página atual -->
+        <li><a href="formacao.html">Formação</a></li> <!-- Link para a página Formação -->
+        <li><a href="portfolio.html">Portfólio</a></li> <!-- Link para a página Portfólio -->
+        <li><a href="contato.html">Contato</a></li> <!-- Link para a página Contato -->
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main>
+    <h1>Sobre Mim</h1> <!-- Título da seção -->
+
+    <!-- Primeiro parágrafo -->
+    <p>
+      Olá! Meu nome é Maykon Anderson Lopkowski, tenho 40 anos e sou natural de Curitiba, Paraná. 
+      Sou casado há 10 anos e pai orgulhoso de duas meninas incríveis: Maria Luiza, de 17 anos, e Maria Clara, de 7 anos.
+    </p>
+
+    <!-- Segundo parágrafo -->
+    <p>
+      Atualmente, trabalho como professor nas áreas de Administração, Geografia e Matemática, 
+      além de ser estudante do curso de Ciência de Dados, um campo que tem despertado minha curiosidade e paixão 
+      pelo universo da tecnologia e análise de informações.
+    </p>
+
+    <!-- Terceiro parágrafo -->
+    <p>
+      Nas horas livres, adoro viajar com minha família, explorar novos lugares e criar memórias especiais. 
+      Sou também um leitor ávido, sempre em busca de bons livros que ampliem meus horizontes, e não escondo minha paixão por futebol, 
+      que considero mais do que um esporte — é uma forma de se conectar com pessoas e culturas.
+    </p>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>© 2024 Maykon Lopkowski</p> <!-- Direitos autorais -->
+  </footer>
+</body>
+</html>

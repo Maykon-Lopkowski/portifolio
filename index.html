@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Metadados essenciais para o HTML -->
+  <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Torna o layout responsivo -->
+  <title>Início</title> <!-- Título da página -->
+
+  <!-- Link externo para um arquivo CSS (separado) -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Estilos internos para a página -->
+  <style>
+    /* Estilo básico do corpo da página */
+    body {
+      font-family: Arial, sans-serif; /* Fonte padrão */
+      margin: 0; /* Remove margens padrão */
+      padding: 0; /* Remove preenchimento padrão */
+      background-color: #f5f5f5; /* Cor de fundo clara */
+      color: #333; /* Cor do texto principal */
+    }
+
+    /* Cabeçalho da página */
+    header {
+      background-color: #0078d4; /* Fundo azul */
+      padding: 10px 0; /* Espaçamento interno */
+      text-align: center; /* Centraliza o conteúdo */
+    }
+
+    /* Menu de navegação */
+    nav ul {
+      list-style: none; /* Remove os marcadores da lista */
+      display: flex; /* Alinha os itens horizontalmente */
+      justify-content: center; /* Centraliza os itens */
+      padding: 0; /* Remove preenchimento padrão */
+      margin: 0; /* Remove margens padrão */
+    }
+
+    /* Itens do menu */
+    nav ul li {
+      margin: 0 15px; /* Espaçamento entre os itens */
+    }
+
+    /* Links do menu */
+    nav ul li a {
+      text-decoration: none; /* Remove o sublinhado */
+      color: white; /* Cor do texto */
+      font-weight: bold; /* Deixa o texto em negrito */
+    }
+
+    /* Página ativa no menu */
+    nav ul li a.active {
+      text-decoration: none; /* Remove o sublinhado (já estilizado) */
+    }
+
+    /* Área principal do conteúdo */
+    main {
+      max-width: 800px; /* Largura máxima do conteúdo */
+      margin: 40px auto; /* Centraliza o conteúdo horizontalmente */
+      padding: 20px; /* Espaçamento interno */
+      background-color: #fff; /* Fundo branco */
+      border-radius: 8px; /* Cantos arredondados */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+      text-align: center; /* Centraliza o texto */
+    }
+
+    /* Estilo do parágrafo */
+    p {
+      line-height: 1.5; /* Define o espaçamento entre as linhas */
+    }
+
+    /* Estilo da imagem */
+    img {
+      width: 250px; /* Define a largura da imagem */
+      height: auto; /* Mantém a proporção da imagem */
+      border-radius: 50%; /* Torna a imagem circular */
+      margin: 20px 0; /* Espaçamento acima e abaixo da imagem */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao redor da imagem */
+    }
+
+    /* Rodapé da página */
+    footer {
+      background-color: #0078d4; /* Fundo azul */
+      color: white; /* Texto branco */
+      text-align: center; /* Centraliza o texto */
+      padding: 10px 0; /* Espaçamento interno */
+      margin-top: 20px; /* Espaçamento acima do rodapé */
+    }
+  </style>
+</head>
+<body>
+  <!-- Cabeçalho com menu de navegação -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Início</a></li> <!-- Link ativo -->
+        <li><a href="sobre.html">Sobre Mim</a></li> <!-- Link para a página Sobre -->
+        <li><a href="formacao.html">Formação</a></li> <!-- Link para a página Formação -->
+        <li><a href="portfolio.html">Portfólio</a></li> <!-- Link para a página Portfólio -->
+        <li><a href="contato.html">Contato</a></li> <!-- Link para a página Contato -->
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal da página -->
+  <main>
+    <h1>Bem-vindo ao meu Portfólio!</h1> <!-- Título da página -->
+    
+    <!-- Parágrafo de introdução -->
+    <p>Olá! Sou Maykon Lopkowski, professor e estudante de Ciência de Dados. Aqui compartilho minha trajetória, formação e projetos. Explore e conheça mais sobre meu trabalho.</p>
+    
+    <!-- Imagem do autor -->
+    <img src="imagem.jpg/maykon1.jpg" alt="Foto de Maykon Lopkowski">
+  </main>
+
+  <!-- Rodapé com informações do autor -->
+  <footer>
+    <p>© 2024 Maykon Lopkowski</p> <!-- Informação de copyright -->
+  </footer>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Metadados essenciais -->
+  <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Torna o layout responsivo -->
+  <title>Contato</title> <!-- Título da página -->
+
+  <!-- Link para o arquivo CSS externo -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Estilo adicional para o formulário -->
+  <style>
+    /* Estilo para o formulário de contato */
+    form {
+      max-width: 500px; /* Define a largura máxima do formulário */
+      margin: 20px auto; /* Centraliza o formulário horizontalmente */
+      display: flex; /* Usa flexbox para organizar os elementos */
+      flex-direction: column; /* Alinha os elementos verticalmente */
+    }
+
+    /* Estilo para os rótulos dos campos */
+    label {
+      margin-bottom: 5px; /* Espaço abaixo de cada rótulo */
+      font-weight: bold; /* Deixa o texto em negrito */
+      text-align: left; /* Alinha os textos à esquerda */
+    }
+
+    /* Estilo para campos de entrada, caixas de texto e botão */
+    input, textarea, button {
+      margin-bottom: 15px; /* Espaço entre os elementos */
+      padding: 10px; /* Espaçamento interno */
+      border: 1px solid #ccc; /* Define uma borda cinza clara */
+      border-radius: 5px; /* Bordas arredondadas */
+      font-size: 16px; /* Tamanho da fonte */
+      width: 100%; /* Faz com que ocupem toda a largura disponível */
+    }
+
+    /* Estilo específico para a caixa de texto */
+    textarea {
+      height: 120px; /* Define uma altura fixa */
+      resize: none; /* Impede o redimensionamento pelo usuário */
+    }
+
+    /* Estilo para o botão */
+    button {
+      background-color: #0078d4; /* Fundo azul */
+      color: white; /* Texto branco */
+      border: none; /* Remove a borda padrão */
+      padding: 10px; /* Espaçamento interno */
+      cursor: pointer; /* Exibe o cursor como uma mão ao passar sobre o botão */
+      transition: background-color 0.3s; /* Animação ao passar o mouse */
+      width: 100px; /* Largura fixa do botão */
+      align-self: flex-start; /* Alinha o botão à esquerda */
+    }
+
+    /* Efeito ao passar o mouse sobre o botão */
+    button:hover {
+      background-color: #005bb5; /* Escurece o azul */
+    }
+  </style>
+</head>
+<body>
+  <!-- Cabeçalho com menu de navegação -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li> <!-- Link para a página inicial -->
+        <li><a href="sobre.html">Sobre Mim</a></li> <!-- Link para a página Sobre Mim -->
+        <li><a href="formacao.html">Formação</a></li> <!-- Link para a página Formação -->
+        <li><a href="portfolio.html">Portfólio</a></li> <!-- Link para a página Portfólio -->
+        <li><a href="contato.html" class="active">Contato</a></li> <!-- Página atual -->
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main>
+    <h1>Contato</h1> <!-- Título da página -->
+
+    <!-- Formulário de contato -->
+    <form onsubmit="return validateForm()" action="#" method="post">
+      <!-- Campo para o nome -->
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+
+      <!-- Campo para o e-mail -->
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+
+      <!-- Campo para a mensagem -->
+      <label for="mensagem">Mensagem:</label>
+      <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem"></textarea>
+
+      <!-- Botão de envio -->
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+
+  <!-- Rodapé com informações do autor -->
+  <footer>
+    <p>© 2024 Maykon Lopkowski</p> <!-- Informação de copyright -->
+  </footer>
+
+  <!-- Script para validação do formulário -->
+  <script>
+    function validateForm() {
+      // Captura os valores dos campos do formulário
+      const nome = document.getElementById("nome").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const mensagem = document.getElementById("mensagem").value.trim();
+
+      // Verifica se todos os campos foram preenchidos
+      if (!nome || !email || !mensagem) {
+        alert("Por favor, preencha todos os campos antes de enviar."); // Exibe alerta se faltar algo
+        return false; // Impede o envio do formulário
+      }
+
+      // Exibe mensagem de sucesso
+      alert("Formulário enviado com sucesso!");
+      return true; // Permite o envio do formulário
+    }
+  </script>
+</body>
+</html>
